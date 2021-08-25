@@ -88,7 +88,7 @@ namespace Loja.API.Controllers{
             Cliente clienteSelecionado = clientes.FirstOrDefault(p => p.Id == id);
             if (clienteSelecionado != null){
                 // Remove o produto da lista
-                produtos.Remove(clienteSelecionado);
+                clientes.Remove(clienteSelecionado);
                 // Retorna um resultado para o cliente
                 return NoContent();
             }
