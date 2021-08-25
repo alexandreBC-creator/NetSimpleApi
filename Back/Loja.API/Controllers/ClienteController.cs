@@ -10,21 +10,21 @@ namespace Loja.API.Controllers{
         public static List<Cliente> clientes = new List<Cliente>();
         public ClienteController(){
             if(clientes.Count <= 0){
-                Cliente cliente = new Cliente(){
+                Cliente cliente1 = new Cliente(){
                 Id = 1,
                 Nome = "Marquinhos",
                 Liberado = true,
                 Credito = 400.00
                 };
                 clientes.Add(cliente);
-                Cliente cliente = new Cliente(){
+                Cliente cliente2 = new Cliente(){
                 Id = 2,
                 Nome = "Mirosvaldo",
                 Liberado = true,
                 Credito = 810.00
                 };
                 clientes.Add(cliente);
-                Cliente cliente = new Cliente(){
+                Cliente cliente3 = new Cliente(){
                 Id = 3,
                 Nome = "Maria Bonita",
                 Liberado = true,
@@ -44,10 +44,31 @@ namespace Loja.API.Controllers{
         }
 
         [HttpGet("{id}")]
-        public IActionResult Get(int id){
+        public IActionResult GetByID(int id){
             var clienteSelecionado = clientes.Where(
                 cli => cli.Id == id);
             return Ok(clienteSelecionado);
+        }
+
+         [HttpGet("{credito}")]
+        public IActionResult GetByCreditoMaiorOuIgual(double credito){
+            var clientesSelecionados = clientes.Where(
+                cli => cli.Credito >= credito);
+            return Ok(clientesSelecionados);
+        }
+
+        [HttpGet)]
+        public IActionResult GetClientesBloqueados(){
+            var clientesSelecionados = clientes.Where(
+                cli => cli.Liberado == false);
+            return Ok(clientesSelecionados);
+        }
+
+        [HttpGet)]
+        public IActionResult GetClientesLiberados(){
+            var clientesSelecionados = clientes.Where(
+                cli => cli.Liberado == true);
+            return Ok(clientesSelecionados);
         }
 
         [HttpPost]
