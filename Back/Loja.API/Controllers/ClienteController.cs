@@ -57,14 +57,14 @@ namespace Loja.API.Controllers{
             return Ok(clientesSelecionados);
         }
 
-        [HttpGet)]
+        [HttpGet]
         public IActionResult GetClientesBloqueados(){
             var clientesSelecionados = clientes.Where(
                 cli => cli.Liberado == false);
             return Ok(clientesSelecionados);
         }
 
-        [HttpGet)]
+        [HttpGet]
         public IActionResult GetClientesLiberados(){
             var clientesSelecionados = clientes.Where(
                 cli => cli.Liberado == true);
