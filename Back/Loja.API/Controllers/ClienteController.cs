@@ -16,21 +16,21 @@ namespace Loja.API.Controllers{
                 Liberado = true,
                 Credito = 400.00
                 };
-                clientes.Add(cliente);
+                clientes.Add(cliente1);
                 Cliente cliente2 = new Cliente(){
                 Id = 2,
                 Nome = "Mirosvaldo",
                 Liberado = true,
                 Credito = 810.00
                 };
-                clientes.Add(cliente);
+                clientes.Add(cliente2);
                 Cliente cliente3 = new Cliente(){
                 Id = 3,
                 Nome = "Maria Bonita",
                 Liberado = true,
                 Credito = 170.00
                 };
-                clientes.Add(cliente);
+                clientes.Add(cliente3);
             }
         }
         [HttpGet]
