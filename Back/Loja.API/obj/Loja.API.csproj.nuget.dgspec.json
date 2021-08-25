@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\rodri\\Documents\\GitHub\\loja\\Back\\Loja.API\\Loja.API.csproj": {}
+    "C:\\Users\\rodri\\Documents\\GitHub\\NetSimpleApi\\back\\loja.api\\Loja.API.csproj": {}
   },
   "projects": {
-    "C:\\Users\\rodri\\Documents\\GitHub\\loja\\Back\\Loja.API\\Loja.API.csproj": {
+    "C:\\Users\\rodri\\Documents\\GitHub\\NetSimpleApi\\back\\loja.api\\Loja.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\rodri\\Documents\\GitHub\\loja\\Back\\Loja.API\\Loja.API.csproj",
+        "projectUniqueName": "C:\\Users\\rodri\\Documents\\GitHub\\NetSimpleApi\\back\\loja.api\\Loja.API.csproj",
         "projectName": "Loja.API",
-        "projectPath": "C:\\Users\\rodri\\Documents\\GitHub\\loja\\Back\\Loja.API\\Loja.API.csproj",
+        "projectPath": "C:\\Users\\rodri\\Documents\\GitHub\\NetSimpleApi\\back\\loja.api\\Loja.API.csproj",
         "packagesPath": "C:\\Users\\rodri\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\rodri\\Documents\\GitHub\\loja\\Back\\Loja.API\\obj\\",
+        "outputPath": "C:\\Users\\rodri\\Documents\\GitHub\\NetSimpleApi\\back\\loja.api\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\rodri\\AppData\\Roaming\\NuGet\\NuGet.Config"

@@ -7,4 +7,4 @@ build_property.PublishSingleFile =
 build_property.IncludeAllContentForSelfExtract = 
 build_property._SupportedPlatformList = Android,iOS,Linux,macOS,Windows
 build_property.RootNamespace = Loja.API
-build_property.ProjectDir = c:\Users\rodri\Documents\GitHub\loja\Back\Loja.API\
+build_property.ProjectDir = c:\Users\rodri\Documents\GitHub\NetSimpleApi\Back\Loja.API\
