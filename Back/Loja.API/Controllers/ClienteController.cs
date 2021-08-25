@@ -6,25 +6,25 @@ using Microsoft.AspNetCore.Mvc;
 namespace Loja.API.Controllers{
     [ApiController]
     [Route("api/[controller]")]
-    public class CLienteController : ControllerBase{
-        public static List<CLiente> clientes = new List<CLiente>();
-        public CLienteController(){
+    public class ClienteController : ControllerBase{
+        public static List<Cliente> clientes = new List<Cliente>();
+        public ClienteController(){
             if(clientes.Count <= 0){
-                CLiente cliente = new CLiente(){
+                Cliente cliente = new Cliente(){
                 Id = 1,
                 Nome = "Marquinhos",
                 Liberado = true,
                 Credito = 400.00
                 };
                 clientes.Add(cliente);
-                CLiente cliente = new CLiente(){
+                Cliente cliente = new Cliente(){
                 Id = 2,
                 Nome = "Mirosvaldo",
                 Liberado = true,
                 Credito = 810.00
                 };
                 clientes.Add(cliente);
-                CLiente cliente = new CLiente(){
+                Cliente cliente = new Cliente(){
                 Id = 3,
                 Nome = "Maria Bonita",
                 Liberado = true,
@@ -51,7 +51,7 @@ namespace Loja.API.Controllers{
         }
 
         [HttpPost]
-        public IActionResult Post([FromBody] CLiente novoCliente){
+        public IActionResult Post([FromBody] Cliente novoCliente){
             clientes.Add(novoCliente);
             return Created("", novoCliente);
         }
@@ -64,7 +64,7 @@ namespace Loja.API.Controllers{
         [HttpDelete("{id}")]
         public IActionResult Delete(int id) {
             // Selecionar o produto que deverá ser removido
-            CLiente clienteSelecionado = clientes.FirstOrDefault(p => p.Id == id);
+            Cliente clienteSelecionado = clientes.FirstOrDefault(p => p.Id == id);
             if (clienteSelecionado != null){
                 // Remove o produto da lista
                 produtos.Remove(clienteSelecionado);
